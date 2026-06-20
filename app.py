@@ -11,8 +11,10 @@ from functools import lru_cache
 import hashlib
 import base64
 from typing import Dict, List, Optional, Any
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # ===================== CONFIGURATION =====================
 YOUTUBE_API_KEY = "AIzaSyAJrpKVk0Ds5dHlayD5f6W2moeJMMF51JI"
